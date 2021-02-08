@@ -9,6 +9,7 @@ let okMaybe = document.getElementById("newOption")
 let nixon = document.getElementById("nixon")
 let poptab = document.getElementById("popup")
 let outerpopup = document.getElementById("outerpopup")
+let nav = document.getElementsByTagName("nav")
 
 popup = function(event){
     poptab.innerHTML = "<h1>On This Page You Will Select Your Candidate.</h1> <br> <button onClick='closetab()'>Ok</button> <button onClick='closepage()'>Cancel</button>"
@@ -24,6 +25,15 @@ let closepage = function(){
     window.close()
 }
 
+// button.onclick = function(){
+//     for (let i = 0; i < 30; i++) {
+//         document.createElement("div")
+//         div.textContent = "Vote nixon"
+        
+//     }
+// }
+
+// nav.
 window.onload = popup()
 let fact = function (event) {
     let info = textArea.innerHTML = "<div id='fact'>Richard Nixon Would Be A Great PRESIDENT</div><div><button id='mcGovernFactButton'>Another Fact</button></div>"
