@@ -1,0 +1,211 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+div.bigButton {
+    color: #ffffff;
+    background: rgb(255, 42, 42);
+    background: linear-gradient(180deg, rgba(255, 42, 42, 1) 0%, rgba(148, 0, 0, 1) 100%);
+    -webkit-text-stroke: 3px black;
+    padding: 10px;
+}
+
+div#nixon {
+    text-align: center;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border: black solid 5px;
+    border-radius: 15px;
+    font-size: 150px;
+    width: fit-content;
+    cursor: url(media/computer-icons-thumb-signal-thumbs-up.png), pointer;
+    transition: all 300ms ease;
+}
+
+div#mcGovern {
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(42, 120, 255);
+    background: linear-gradient(180deg, rgba(42, 120, 255, 1) 0%, rgba(8, 0, 148, 1) 100%);
+    border: black solid 5px;
+    border-radius: 15px;
+    font-size: 150px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    cursor: not-allowed;
+    
+}
+div#mcGovern2 {
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(42, 120, 255);
+    background: linear-gradient(180deg, rgba(42, 120, 255, 1) 0%, rgba(8, 0, 148, 1) 100%);
+    border: black solid 5px;
+    border-radius: 15px;
+    font-size: 150px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    cursor: not-allowed;
+    
+}
+
+
+
+nav{
+    color: white;
+    background-color: maroon;
+    position: absolute;
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    height: 100vh;
+    border-right: black 1px solid;
+    align-content: flex-start;
+    
+}
+
+
+
+#fact{
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    font-size: 25px;
+    border: black 1px solid;
+    border-radius: 5px;
+    background-color: salmon;
+    -webkit-text-stroke: white 1px;
+    padding: 15px 10px 15px 10px;
+    transition: all 1s;
+    
+}
+
+#fact2{
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    font-size: 25px;
+    border: black 1px solid;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    -webkit-text-stroke: white 1px;
+    padding: 15px 10px 15px 10px;
+    transition: all 1s;
+}
+
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+div#field{
+    min-width: 100vw;
+    min-height: 100vh;
+    transition: all 1s ease-in-out;
+}
+#voteButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background: rgb(42, 120, 255);
+    background: linear-gradient(180deg, rgba(42, 120, 255, 1) 0%, rgba(8, 0, 148, 1) 100%);
+    -webkit-text-stroke: 3px black;
+    padding: 10px;
+    transition: all 1s;
+    justify-self: center;
+    border: black solid 5px;
+    border-radius: 15px;
+    font-size: 75px;
+    width: fit-content;
+    transition: all 1s ease;
+    outline: none;
+    margin: auto;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#votes{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: midnightblue;
+    transition: all 1s ease-in-out;
+}
+
+#finish{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: larger;
+}
+
+#outerpopup{
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background:black;
+    position: absolute;
+    transition: all 1s ease;
+}
+#popup{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: black;
+    -webkit-text-stroke: wheat;
+    background: wheat;
+    width: 500px;
+    height: 200px;
+    border: black 1px solid;
+    box-shadow: black 1px 1px 2px;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    
+    
+}
+#popup button{
+    width: fit-content;
+    height: fit-content;
+    margin: 13px;
+    padding: 5px;
+    outline: none;
+    border-radius: 2px;
+}
+
